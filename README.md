@@ -8,7 +8,14 @@ Tamper-proof voting system using Solidity smart contracts.
 - Prevents double voting
 - Dynamic tally calculation
 
-## How to Run
-- Compile using Hardhat: `npx hardhat compile`
-- Deploy locally: `npx hardhat run scripts/deploy.js --network localhost`
-- Connect MetaMask for mainnet deployment
+## Deployment
+- Run local node: `npx hardhat node`
+- Deploy contract: `npx hardhat run scripts/deploy.js --network localhost`
+
+## Testing
+- Run tests: `npx hardhat test`
+- Includes:
+  - Voter authorization check
+  - Double voting prevention
+  - Correct tally calculation
+
